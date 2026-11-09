@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 📊 Green Mall: Расширение BI-системы
 
-# Run and deploy your AI Studio app
+Проект по расширению возможностей BI-системы (Business Intelligence) для интернет-магазина Green Mall. В рамках задания были добавлены новые аналитические возможности: кастомная RPC-функция в Supabase, обновлен промпт AI-ассистента и создана новая визуализация на дашборде.
 
-This contains everything you need to run your app locally.
+🔗 **Живое демо:** [Открыть приложение в Google AI Studio](ВСТАВЬТЕ_ССЫЛКУ_НА_ВАШЕ_ПРИЛОЖЕНИЕ)
 
-View your app in AI Studio: https://ai.studio/apps/0a002f94-a324-478e-802d-bcd8c914db43
+## 🚀 Что было сделано
 
-## Run Locally
+### 1. Новая RPC-функция (SQL)
+Разработана и внедрена в базу данных (Supabase) функция для анализа продаж.
+*   **Задача:** Показать динамику выручки по месяцам в разрезе товарных категорий.
+*   **Возвращаемые данные:** `month` (месяц), `category_name` (категория), `revenue` (выручка).
 
-**Prerequisites:**  Node.js
+### 2. Обновление промпта AI-ассистента
+В системный промпт для Google AI Studio добавлено описание новой функции. Теперь ИИ понимает, как вызывать новую RPC-функцию, и может строить по ней графики.
 
+### 3. Новая визуализация на дашборде
+С помощью Code Assistant на дашборд добавлен **Multi-line график**, отображающий выручку по месяцам для топ-3 категорий.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📸 Скриншоты работы
+![Дашборд](ВСТАВЬТЕ_ССЫЛКУ_НА_КАРТИНКУ_ДАШБОРДА)
+![Ответ ИИ](ВСТАВЬТЕ_ССЫЛКУ_НА_КАРТИНКУ_ИИ)
+
+## 🛠 Стек технологий
+*   **База данных:** PostgreSQL (Supabase)
+*   **AI:** Google AI Studio (Gemini)
+*   **BI-визуализация:** Code Assistant
+
+## 👩‍💻 Автор
+**Ольга Тяжкороб**
+*   [Портфолио](https://olgatazkorob7-png.github.io/ogt-site/)
